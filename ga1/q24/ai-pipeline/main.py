@@ -210,7 +210,7 @@ Pipeline execution completed successfully!
         
         # In production, you would send actual email here
         # For now, console log serves as notification
-        print("✅ Notification sent to: 23f3003225@ds.study.iitm.ac.in")
+        print("✅ Notification sent to: your-student-id")
         
         return True
         

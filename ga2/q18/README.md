@@ -24,7 +24,7 @@ For a valid CSV upload:
 
 ```json
 {
-  "email": "23f3003225@ds.study.iitm.ac.in",
+  "email": "your-student-id",
   "filename": "data.csv",
   "rows": 42,
   "columns": ["id", "name", "value", "category"],

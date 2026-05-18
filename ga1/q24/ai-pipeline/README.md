@@ -37,7 +37,7 @@ Server starts at `http://localhost:8000`
 ```bash
 curl -X POST http://localhost:8000/pipeline \
   -H "Content-Type: application/json" \
-  -d '{"email": "23f3003225@ds.study.iitm.ac.in", "source": "JSONPlaceholder Users"}'
+  -d '{"email": "your-student-id", "source": "JSONPlaceholder Users"}'
 ```
 
 ### Response

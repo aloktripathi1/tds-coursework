@@ -28,7 +28,7 @@ POST https://tds-ga2-q15.tds-23f3003225.workers.dev/data
 ```json
 {
   "reversed": ...,
-  "email": "23f3003225@ds.study.iitm.ac.in"
+  "email": "your-student-id"
 }
 ```
 
@@ -57,5 +57,5 @@ curl -X POST https://tds-ga2-q15.tds-23f3003225.workers.dev/data \
 Expected response:
 
 ```json
-{"reversed":[13,85,4,1,14,69,59],"email":"23f3003225@ds.study.iitm.ac.in"}
+{"reversed":[13,85,4,1,14,69,59],"email":"your-student-id"}
 ```

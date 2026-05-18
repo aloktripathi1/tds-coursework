@@ -39,7 +39,7 @@ export default {
 
                 return jsonResponse({
                     reversed,
-                    email: "23f3003225@ds.study.iitm.ac.in",
+                    email: "your-student-id",
                 });
             } catch (err) {
                 return jsonResponse({ error: "Invalid JSON body" }, 400);

@@ -18,7 +18,7 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 addresses = []
-with open("addresses_23f3003225@ds.study.iitm.ac.in.csv", "r", encoding="utf-8") as f:
+with open("addresses_your-student-id.csv", "r", encoding="utf-8") as f:
     reader = csv.reader(f)
     header = next(reader)
     for row in reader:

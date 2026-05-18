@@ -17,7 +17,7 @@ Rules:
 
 from collections import defaultdict
 
-CSV_FILE = r"transactions_23f3003225@ds.study.iitm.ac.in.csv"
+CSV_FILE = r"transactions_your-student-id.csv"
 
 totals = defaultdict(float)
 

@@ -6,7 +6,7 @@ Uses a hybrid approach:
 """
 import zipfile, json, csv, io, re, requests, time
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "your-openrouter-api-key"
 OR_MODEL = "google/gemini-2.0-flash-001"
 
 # ── Load data ─────────────────────────────────────────────────

@@ -2,7 +2,7 @@ import zipfile
 import json
 from collections import defaultdict
 
-ZIP_FILE = "api_data_23f3003225@ds.study.iitm.ac.in.zip"
+ZIP_FILE = "api_data_your-student-id.zip"
 
 counts = defaultdict(int)
 

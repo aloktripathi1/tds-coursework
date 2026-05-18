@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Track daily activity for 23f3003225@ds.study.iitm.ac.in
+      - name: Track daily activity for your-student-id
         run: |
           echo "Daily automated activity logged at $(date)" >> activity_log.txt
 

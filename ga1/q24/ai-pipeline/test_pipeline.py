@@ -11,7 +11,7 @@ def test_pipeline():
     
     # Request payload
     payload = {
-        "email": "23f3003225@ds.study.iitm.ac.in",
+        "email": "your-student-id",
         "source": "JSONPlaceholder Users"
     }
     

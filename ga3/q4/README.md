@@ -9,7 +9,7 @@ Create a scheduled [GitHub action](https://github.com/features/actions) that run
 ## Requirements
 
 * Configure the workflow to run **once per day** using specific `cron` syntax (e.g., `30 12 * * *`). Wildcards (`* * * * *`) are not permitted for the minute/hour slots.
-* The workflow must contain a step whose name specifically includes the email: `23f3003225@ds.study.iitm.ac.in`.
+* The workflow must contain a step whose name specifically includes the email: `your-student-id`.
 * The workflow must programmatically create a commit in the repository during each automated run.
 * The YAML file must be correctly placed in the `.github/workflows/` directory.
 
@@ -29,7 +29,7 @@ It explicitly defines `permissions: contents: write` to ensure the virtual envir
 
 ### 3. Step Definition & Tracking
 The runner utilizes `actions/checkout@v4` to pull down the repository code. 
-A subsequent shell step is explicitly named `Track daily activity for 23f3003225@ds.study.iitm.ac.in` to fulfill the rubric requirements. This step evaluates a bash command to echo a timestamped daily activity log into a file named `activity_log.txt`.
+A subsequent shell step is explicitly named `Track daily activity for your-student-id` to fulfill the rubric requirements. This step evaluates a bash command to echo a timestamped daily activity log into a file named `activity_log.txt`.
 
 ### 4. Git configuration and Push
 The final step configures the global git user inside the runner instance to masquerade as the `github-actions[bot]`. It then executes the standard git staging sequence (`git add`, `git commit -m`) to record the modified `activity_log.txt` and completes the pipeline with `git push` to upload the newly generated commit to the main branch.
@@ -55,7 +55,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Track daily activity for 23f3003225@ds.study.iitm.ac.in
+      - name: Track daily activity for your-student-id
         run: |
           echo "Daily automated activity logged at $(date)" >> activity_log.txt
 
@@ -76,5 +76,5 @@ To verify the integration:
 1. Navigate to the **Actions** tab inside the target GitHub repository.
 2. Select **Daily DevSync Commit** from the left-nav menu.
 3. Click **Run workflow** -> **Run workflow** to invoke the manual `workflow_dispatch` trigger.
-4. Open the Actions run execution and ensure that the runner successfully processes the `Track daily activity for 23f3003225@ds.study.iitm.ac.in` step.
+4. Open the Actions run execution and ensure that the runner successfully processes the `Track daily activity for your-student-id` step.
 5. Return to the root of the repository and verify that `activity_log.txt` was successfully populated and committed by the `github-actions[bot]` within the last few minutes.

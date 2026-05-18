@@ -43,7 +43,7 @@ Add each normalized address to a Python `set()` — duplicates are automatically
 import re
 from collections import Counter
 
-with open('addresses_23f3003225@ds.study.iitm.ac.in.txt', encoding='utf-8') as f:
+with open('addresses_your-student-id.txt', encoding='utf-8') as f:
     lines = [l.strip() for l in f if l.strip()]
 
 unique = set()

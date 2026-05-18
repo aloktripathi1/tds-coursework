@@ -9,7 +9,7 @@ Publish a portfolio page using GitHub Pages with a shielded email address.
     -   Created `index.html` with the required content.
     -   Inserted the email address wrapped in the special comment tag:
         ```html
-        <!--email_off-->23f3003225@ds.study.iitm.ac.in<!--/email_off-->
+        <!--email_off-->your-student-id<!--/email_off-->
         ```
 
 2.  **Repository Setup**:

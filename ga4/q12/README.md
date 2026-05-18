@@ -51,7 +51,7 @@ Rows with 4 pipe fields (hybrid format) had `City` appearing in the category slo
 from collections import defaultdict
 totals = defaultdict(float)
 
-with open('transactions_23f3003225@ds.study.iitm.ac.in.csv', encoding='utf-8') as f:
+with open('transactions_your-student-id.csv', encoding='utf-8') as f:
     for raw_line in f:
         line = raw_line.strip()
         if not line: continue

@@ -2,7 +2,7 @@
 
 ## Task
 
-Create a localtunnel tunnel to a local server that serves `23f3003225@ds.study.iitm.ac.in`. The tunnel URL should end in `.loca.lt`.
+Create a localtunnel tunnel to a local server that serves `your-student-id`. The tunnel URL should end in `.loca.lt`.
 
 ---
 
@@ -15,7 +15,7 @@ Created a minimal Python HTTP server (`server.py`) on port 3000 that responds to
 ```python
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-EMAIL = "23f3003225@ds.study.iitm.ac.in"
+EMAIL = "your-student-id"
 
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):

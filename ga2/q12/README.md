@@ -2,7 +2,7 @@
 
 ## Task
 
-Host a file on **GitHub Gist** that showcases your work and includes your email address (`23f3003225@ds.study.iitm.ac.in`) in the page's HTML.
+Host a file on **GitHub Gist** that showcases your work and includes your email address (`your-student-id`) in the page's HTML.
 
 **Challenge:** GitHub Gists are served via Cloudflare, which may obfuscate email addresses. You must include the email in a way that remains visible in the HTML source or rendered output.
 

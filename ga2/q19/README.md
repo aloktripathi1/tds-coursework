@@ -78,7 +78,7 @@ This is the trickiest part, but follow carefully!
 
 **On Test Users page:**
 - **Click** "ADD USERS"
-- **Add:** `23f3003225@ds.study.iitm.ac.in` (the email you'll log in with)
+- **Add:** `your-student-id` (the email you'll log in with)
 - **Click** "ADD"
 - **Click** "SAVE AND CONTINUE"
 
@@ -184,7 +184,7 @@ INFO:     Application startup complete.
 **What happens:**
 1. You're redirected to Google's login page
 2. Google asks "FastAPI OAuth Test wants to access your Google Account"
-3. **Select your account:** Choose `23f3003225@ds.study.iitm.ac.in`
+3. **Select your account:** Choose `your-student-id`
 4. **Click** "Continue" or "Allow"
 5. You're redirected back to http://localhost:8000
 
@@ -251,7 +251,7 @@ The `id_token` is a JWT (JSON Web Token) containing:
   "iss": "https://accounts.google.com",  // Who issued it (Google)
   "aud": "your-client-id",                // Who it's for (your app)
   "sub": "1234567890",                    // User's unique Google ID
-  "email": "23f3003225@ds.study.iitm.ac.in",
+  "email": "your-student-id",
   "email_verified": true,                 // Email is verified
   "name": "Your Name",
   "picture": "https://...",               // Profile picture URL
@@ -278,7 +278,7 @@ The `id_token` is a JWT (JSON Web Token) containing:
 
 **Solution:**
 1. Go to OAuth consent screen
-2. Make sure `23f3003225@ds.study.iitm.ac.in` is added as a test user
+2. Make sure `your-student-id` is added as a test user
 3. Save and try again
 
 ### Error: "Not authenticated"
@@ -366,7 +366,7 @@ pip install fastapi uvicorn authlib itsdangerous httpx python-dotenv
 uvicorn main:app --reload
 
 # 4. Visit http://localhost:8000/login
-# 5. Log in with 23f3003225@ds.study.iitm.ac.in
+# 5. Log in with your-student-id
 # 6. Go to http://localhost:8000/id_token
 # 7. Copy the id_token and client_id
 # 8. Submit as JSON
@@ -386,7 +386,7 @@ uvicorn main:app --reload
 ## ❓ FAQ
 
 **Q: Can I use my personal email instead of the IIT one?**
-A: No, the grader checks that the email is exactly `23f3003225@ds.study.iitm.ac.in`.
+A: No, the grader checks that the email is exactly `your-student-id`.
 
 **Q: Do I need to verify my OAuth app?**
 A: No, for testing purposes you can keep it in "Testing" mode.

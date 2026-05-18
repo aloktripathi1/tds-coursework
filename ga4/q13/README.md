@@ -46,7 +46,7 @@ import zipfile, json
 from collections import defaultdict
 
 counts = defaultdict(int)
-with zipfile.ZipFile("api_data_23f3003225@ds.study.iitm.ac.in.zip") as z:
+with zipfile.ZipFile("api_data_your-student-id.zip") as z:
     for name in z.namelist():
         if not name.endswith(".json"): continue
         for rec in json.loads(z.read(name)):

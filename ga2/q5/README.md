@@ -7,7 +7,7 @@ Host a static JSON API for the StaticShop product catalog on GitHub Pages.
 
 1.  **Data Creation**:
     -   Created `products.json` containing:
-        -   Metadata with email (`23f3003225@ds.study.iitm.ac.in`) and version (`f13b771b`).
+        -   Metadata with email (`your-student-id`) and version (`f13b771b`).
         -   List of 18 products with specific details.
         -   Aggregations for the `home` category (count: 3, inventoryValue: 85353.16).
 

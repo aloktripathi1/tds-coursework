@@ -6,7 +6,7 @@ Install `uv` (a fast Python package and project manager) and use it to make a PO
 ### Requirements
 - Install uv using the official installation script
 - Use HTTPie via uv to POST JSON data to https://httpbin.org/post
-- Payload must contain: `email=23f3003225@ds.study.iitm.ac.in` and `request_id=30e79164`
+- Payload must contain: `email=your-student-id` and `request_id=30e79164`
 - Return only the JSON response body (not HTTP headers)
 
 ## Approach
@@ -24,14 +24,14 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 ### Make POST Request
 ```bash
-uv run --with httpie -- http --json --body POST https://httpbin.org/post email=23f3003225@ds.study.iitm.ac.in request_id=30e79164
+uv run --with httpie -- http --json --body POST https://httpbin.org/post email=your-student-id request_id=30e79164
 ```
 
 ## Response
 ```json
 {
     "args": {},
-    "data": "{\"email\": \"23f3003225@ds.study.iitm.ac.in\", \"request_id\": \"30e79164\"}",
+    "data": "{\"email\": \"your-student-id\", \"request_id\": \"30e79164\"}",
     "files": {},
     "form": {},
     "headers": {
@@ -44,7 +44,7 @@ uv run --with httpie -- http --json --body POST https://httpbin.org/post email=2
         "X-Amzn-Trace-Id": "Root=1-6963ae7a-75f6a95205802c2c11b16328"
     },
     "json": {
-        "email": "23f3003225@ds.study.iitm.ac.in",
+        "email": "your-student-id",
         "request_id": "30e79164"
     },
     "origin": "4.240.18.227",

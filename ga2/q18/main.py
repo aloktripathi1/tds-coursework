@@ -63,7 +63,7 @@ async def upload_file(
         total_value = round(total_value, 2)
 
         return JSONResponse(content={
-            "email": "23f3003225@ds.study.iitm.ac.in",
+            "email": "your-student-id",
             "filename": filename,
             "rows": len(rows),
             "columns": columns,
@@ -72,7 +72,7 @@ async def upload_file(
         })
 
     return JSONResponse(content={
-        "email": "23f3003225@ds.study.iitm.ac.in",
+        "email": "your-student-id",
         "filename": filename,
         "message": "File accepted",
     })

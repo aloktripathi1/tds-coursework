@@ -2,13 +2,13 @@
 
 ## Task
 
-Process a personalized CSV of 100 messy addresses (`addresses_23f3003225@ds.study.iitm.ac.in.csv`) and extract the zip code for each row using an AI formula, returning "N/A" if none exists. Supply the concatenated output of all 100 rows.
+Process a personalized CSV of 100 messy addresses (`addresses_your-student-id.csv`) and extract the zip code for each row using an AI formula, returning "N/A" if none exists. Supply the concatenated output of all 100 rows.
 
 ---
 
 ## Requirements
 
-* Download `addresses_23f3003225@ds.study.iitm.ac.in.csv`
+* Download `addresses_your-student-id.csv`
 * Extract the zip/postal code from each address
 * If there is no zip code, output `N/A`
 * Concatenate all 100 rows into a single string (using `,`)
@@ -41,7 +41,7 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-2.5-flash')
 
 addresses = []
-with open("addresses_23f3003225@ds.study.iitm.ac.in.csv", "r") as f:
+with open("addresses_your-student-id.csv", "r") as f:
     next(csv.reader(f)) # skip header
     for row in csv.reader(f):
         if row: addresses.append(row[0])

@@ -20,4 +20,4 @@ Configure Dependabot to automatically check for security updates in a Python pro
     -   Pushed to `https://github.com/aloktripathi1/q-dependabot-config`.
 
 ## Contact
-Email: 23f3003225@ds.study.iitm.ac.in
+Email: your-student-id
