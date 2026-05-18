@@ -1,31 +1,53 @@
-# Tools in Data Science (TDS) – Jan 2026
+# Tools in Data Science — Jan 2026
 
-A hands-on data science engineering repository focused on building, automating, and deploying real-world data workflows.
+> Build it. Ship it. Automate it.
 
-## Scope
-This repository contains graded assignments and projects completed as part of the TDS course.  
-Emphasis is placed on:
-- Reproducible workflows
-- Version control discipline
-- API development
-- Data processing pipelines
-- Deployment and CI/CD automation
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://docker.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 
-## Repository Structure
-- `graded-assignments/` – Weekly technical implementations (ga1, ga2, ...)
-- `projects/` – End-to-end applied projects
-- `notes/` – Technical documentation and learnings
+---
 
-## Tech Stack
-- **Development:** VS Code, Git, GitHub, GitHub Codespaces, DevContainers, Docker, uv, pip, curl, HTTPie, ngrok, Bash, PowerShell, wrangler
-## 🛠 Tech Stack
-- **Development**: VS Code, Git, Docker, GitHub Actions, Dependabot, GitHub Pages, GitHub Codespaces, ngrok, localhost.run, Cloudflare Tunnel
-- **Backend**: FastAPI, Flask, Starlette, Uvicorn, Gunicorn, Pydantic, python-multipart, itsdangerous, httpx, requests, python-dotenv, SSE, StreamingResponse
-- **Data / ML**: pandas, numpy, scikit-learn, Pillow, pickle, csv
-- **Databases**: PostgreSQL, Redis, SQLite
-- **Frontend / Deployment**: HTML, CSS, JavaScript, Vercel, Cloudflare Workers, Railway, Render, Google OAuth 2.0, JWT
-- **Testing**: pytest, httpx
-- **AI / LLM**: OpenAI API (gpt-3.5-turbo, gpt-4o-mini, text-embedding-3-small), Google Gemini (gemini-2.0-flash-exp), Ollama (llama3), Playwright, yt-dlp, semantic vector cache
+### What's inside
 
-Built under a learn-by-building philosophy.  
-All work is reproducible and version-controlled.
+| Folder | Focus |
+|--------|-------|
+| `entrance-evaluation/` | 27 pre-course screening questions |
+| `ga1/` | APIs · embeddings · caching · streaming |
+| `ga2/` | DevOps · deployment · tunneling · OAuth |
+| `ga3/` | LLMs · scraping · browser automation |
+| `ga4/` | SQL · dbt · AST analysis · data wrangling |
+| `ga5/` | Git internals · advanced workflows |
+| `project-1/` | [View Project](https://github.com/aloktripathi1/tds-project-1)
+
+---
+
+### Tech at a glance
+
+| Category | Technologies |
+|----------|-------------|
+| Languages | Python, JavaScript, SQL, Bash, PowerShell |
+| Backend | FastAPI, Flask, Starlette, Uvicorn, Gunicorn, Pydantic, httpx, requests, SSE |
+| AI / LLM | OpenAI (GPT-4o-mini, text-embedding-3-small), Gemini, Ollama, Groq Whisper, AIPipe, OpenRouter, VADER |
+| Data / ML | pandas, NumPy, scikit-learn, Pillow, AST |
+| Databases | PostgreSQL, Redis, SQLite |
+| Infra | Docker, GitHub Actions, Codespaces, DevContainers, Vercel, Cloudflare Workers, Railway, Render, Hugging Face Spaces |
+| Tunneling | ngrok, cloudflared, localtunnel |
+| Auth | Google OAuth 2.0, JWT, itsdangerous |
+| Scraping / Media | Playwright, yt-dlp, FFmpeg, Google Sheets |
+| Tools | VS Code, Git, uv, pip, curl, HTTPie, wrangler, pytest |
+
+---
+
+### Quick start
+
+```bash
+git clone <repo-url> && cd tds-jan-2026
+python -m venv .venv && source .venv/bin/activate
+pip install fastapi uvicorn pandas numpy pillow httpx
+```
+
+---
+
+> Learn by building. Everything reproducible, everything version-controlled.
